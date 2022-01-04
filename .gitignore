@@ -1,0 +1,8 @@
+*.local
+*.log
+.DS_Store
+.idea
+dist
+dist-ssr
+node_modules
+words.txt
