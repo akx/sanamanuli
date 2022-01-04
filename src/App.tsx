@@ -1,5 +1,6 @@
 import React from "react";
 import { findMatches, loadData } from "./data";
+import manuli from "./manuli.png";
 
 function App() {
   const [wordData, setWordData] = React.useState<Uint8ClampedArray | null>(
@@ -107,9 +108,11 @@ function App() {
         </label>
       </div>
       <div className="results">
-        {results?.map((word) => (
-          <div key={word}>{word}</div>
-        ))}
+        {results?.length ? (
+          results?.map((word) => <div key={word}>{word}</div>)
+        ) : (
+          <img className="manuli" src={manuli} />
+        )}
       </div>
     </main>
   );

@@ -53,3 +53,9 @@ label > div > button {
     background: rgba(0, 0, 0, 50%);
     text-align: center;
 }
+
+.manuli {
+    width: 100%;
+    max-width: 390px;
+    margin: auto;
+}
