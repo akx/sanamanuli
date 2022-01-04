@@ -74,13 +74,13 @@ function App() {
           <div>
             <button
               onClick={() => setExpectedLength(5)}
-              disabled={expectedLength === 5}
+              className={expectedLength === 5 ? "selected" : ""}
             >
               5
             </button>
             <button
               onClick={() => setExpectedLength(6)}
-              disabled={expectedLength === 6}
+              className={expectedLength === 6 ? "selected" : ""}
             >
               6
             </button>
